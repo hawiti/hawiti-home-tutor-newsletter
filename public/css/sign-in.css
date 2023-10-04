@@ -1,0 +1,36 @@
+html,
+body {
+  height: 100%;
+}
+
+.form-signup {
+  max-width: 330px;
+  padding: 1rem;
+}
+
+.form-signup .form-floating:focus-within {
+  z-index: 2;
+}
+
+.top {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.middle{
+    border-radius: 0;
+    margin-bottom: -1px;
+}
+
+.bottom {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+img{
+    transform: rotate(-14deg);
+    position: relative;
+    left: 30px;
+}
