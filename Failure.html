@@ -4,12 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Failure</title>
+    <style>
+       body{
+        background: rgb(216, 228, 216);
+       }
+       .fail{
+        width: 350px;
+        height: 300px;
+        top: 80px;
+        position: relative;
+        margin: 0 auto;
+        padding: 2% 3%;
+        background: #e4c8c8;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 1.5rem;
+        line-height: 1.6;
+        border-radius: 10%;
+       }
+       .btn{
+        position: relative;
+        left: 30px;
+        background: #ad7878;
+        width: 100px;
+        height: 50px;
+        color: #080606;
+        border-radius: 10%;
+        font-family: cursive;
+       }
+    </style>
 </head>
 <body>
+    <div class="fail">
     <h1>uh oh!</h1>
     <p>There was a problem signing you up. please try again!</p>
     <form action="/failure" method="post">
-        <button type="submit">Try again</button>
+        <button class="btn" type="submit">Try again</button>
     </form>
+    </div>
+    
 </body>
 </html>

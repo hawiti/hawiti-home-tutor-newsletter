@@ -2,7 +2,7 @@ const express=require("express");
 const bodyParser=require("body-parser");
 const request=require("request");
 const https=require("https");
-const { dirname } = require("path");
+require("dotenv").config();
 
 const app=express();
 app.use(express.static("public"));
@@ -30,10 +30,10 @@ app.post("/", function(req,res){
   };
 
   const JsonData= JSON.stringify(data);
-  const url="https://us11.api.mailchimp.com/3.0/lists/a16e63db94";
+  const url="https://us11.api.mailchimp.com/3.0/lists/"+process.env.id;
   const options={
-    method: "POST",
-    auth: "hawiti:26694898a6712b486f7c654ce22259c7-us11"
+    method: "POST", 
+    auth: "hawiti:"+process.env.api_key
   }
   const request=https.request(url, options, function(response){
 
